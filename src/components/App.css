@@ -1,0 +1,242 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif; /* Using a clean sans-serif font */
+    color: white;
+    background: #202731; /* Dark background for better contrast */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 4rem; /* Main heading size */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  p {
+    font-size: 1.5rem; /* Paragraph font size */
+    line-height: 1.6; /* Improved readability */
+  }
+  
+  /* Section Styles */
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10px;
+    padding-top: 10px;
+  }
+  
+  /* Color Themes */
+  .blue {
+    background: #3c31dd; /* Blue background for sections */
+  }
+  
+  .pink {
+    background: #ff0066; /* Pink background for sections */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .dark {
+    background: #0f0f10; /* Dark background for contrast */
+  }
+  
+  /* Curved Background */
+  .curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+  
+  .curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%); /* Darker curve */
+  }
+  
+  .curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd; /* Lighter curve */
+    transform: translate(-4%, 40%);
+    z-index: -1;
+  }
+  
+  /* Spacer Styles */
+  .spacer {
+    aspect-ratio: 960 / 300; /* Maintains aspect ratio */
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .layer1 {
+    background-image: url('./layer1.svg'); /* Background image */
+  }
+  
+  .layer2 {
+    background-image: url('./layer2.svg'); /* Background image */
+  }
+  
+  /* Flip Animation */
+  .flip {
+    transform: rotate(180deg); /* Flipping effect */
+  }
+  
+  /* Blobs SVG Background */
+  .blobs {
+    width: 100%;
+    background: url('./blobs.svg') no-repeat bottom / cover; /* Background image */
+  }
+  
+  /* Form Styles */
+  #predictionForm {
+    max-width: 600px; /* Maximum width of the form */
+    margin: 20px auto; /* Centered margin */
+    padding: 20px;
+    background: white; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  /* Form Group Styles */
+  .form-group {
+    margin-bottom: 15px; /* Spacing between form groups */
+  }
+  
+  label {
+    font-size: 14px; /* Label font size */
+    margin-bottom: 5px; /* Space below label */
+    color: #333; /* Dark color for labels */
+  }
+  
+  /* Input Styles */
+  input[type="number"] {
+    padding: 10px; /* Padding inside input */
+    font-size: 14px; /* Input font size */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+  }
+  
+  input[type="number"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button Styles */
+  button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    width: 100%; /* Full width button */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  button:active {
+    transform: translateY(0); /* Reset transform on click */
+  }
+  
+  /* Loading Spinner Styles */
+  .spinner {
+    border: 8px solid rgba(255, 255, 255, 0.3); /* Light border for spinner */
+    border-top: 8px solid #007bff; /* Blue top border for the spinner */
+    border-radius: 50%; /* Circular shape */
+    width: 40px; /* Width of the spinner */
+    height: 40px; /* Height of the spinner */
+    animation: spin 1s linear infinite; /* Spin animation */
+  }
+  
+  /* Spinner Animation */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Start rotation */
+    }
+    100% {
+      transform: rotate(360deg); /* Complete rotation */
+    }
+  }
+  
+  /* Output Styles */
+  #output {
+    color: #0f0f10; /* Output text color */
+    margin-top: 15px; /* Spacing above output */
+    padding: 10px; /* Padding inside output */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for output */
+    border-radius: 4px; /* Rounded corners for output */
+  }
+  
+  /* Style for the select dropdown */
+select {
+    width: 200px; /* Width of the dropdown */
+    padding: 10px; /* Padding inside the dropdown */
+    margin: 10px 0; /* Margin around the dropdown */
+    border: 2px solid #4A90E2; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    background-color: white; /* Background color */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  /* Change border color on focus */
+  select:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Style for the button */
+  button {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #4A90E2; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Change background color on hover */
+  button:hover {
+    background-color: #007BFF; /* Darker blue on hover */
+  }
+  
+
+  /* Style for the sign-out button */
+button {
+    background-color: #FF5733; /* Sign-out button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 8px 12px; /* Padding */
+    cursor: pointer; /* Cursor changes to pointer */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button:hover {
+    background-color: #C70039; /* Darker color on hover */
+  }
+  
