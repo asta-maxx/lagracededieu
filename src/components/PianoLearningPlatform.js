@@ -15,7 +15,7 @@ const PianoLearningPlatform = () => {
     chords: 'https://www.youtube.com/embed/videoseries?list=PLfM8ivjJ-rKWHALei28Ns_tu28os8MciS', // Chords playlist
   };
 
-  const API_KEY = 'AIzaSyCy81GScOZfeTOTZYURijeVDz-bDmxVxNU'; // Your YouTube Data API key
+  const API_KEY = 'blablabla'; // Your YouTube Data API key
   const PLAYLIST_IDS = {
     scales: 'PLJOfTzSYW-9oTpYqDNEEKqIPutaanRvFY',
     arpeggios: 'PL8hZtgRyL9WS8VQipoK1RxgWJCaJhhLb5', // Arpeggios playlist
