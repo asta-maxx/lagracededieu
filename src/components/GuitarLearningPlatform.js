@@ -15,7 +15,7 @@ const GuitarLearningPlatform = () => {
     techniques: 'https://www.youtube.com/embed/videoseries?list=PLFcgHQh5q7E5Xk-jahQcgPgPMNEBiXgCT', // Techniques playlist
   };
 
-  const API_KEY = 'AIzaSyCy81GScOZfeTOTZYURijeVDz-bDmxVxNU'; // Your YouTube Data API key
+  const API_KEY = 'blablabla'; // Your YouTube Data API key
   const PLAYLIST_IDS = {
     chords: 'PLho65cYn4nF1FXo8IWbKUb9_k0pMhgbtr',
     scales: 'PLAEBBD885ECD8B675', // Scales playlist
