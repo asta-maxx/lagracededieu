@@ -15,7 +15,7 @@ const DrumLearningPlatform = () => {
     drumExercises: 'https://www.youtube.com/embed/videoseries?list=PLThYwnIoLwyV_4OVK8Oj3idnHqX3qnTNR', // Drum Exercises playlist
   };
 
-  const API_KEY = 'AIzaSyCy81GScOZfeTOTZYURijeVDz-bDmxVxNU'; // Your YouTube Data API key
+  const API_KEY = 'blablabla'; // Your YouTube Data API key
   const PLAYLIST_IDS = {
     drumBasics: 'PL45A6530592779AD4', // Drum Basics playlist
     drumTechniques: 'PLLOJc4hJB_hK3JpE6B6N3Lj7-foARntiA', // Drum Techniques playlist
